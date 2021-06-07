@@ -1,0 +1,123 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Generiche */
+.button {
+    display: inline-block;
+
+    background-color: rgb(18, 103, 251);
+    color: white;
+    padding: 10px 15px;
+}
+
+/* Position properties */
+.inline-cul {
+    display: inline-block;
+}
+
+.cul {
+    float: left;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.relative {
+    position: relative;
+}
+
+.text-right{
+    text-align: right;
+}
+
+/* Sizing properties */
+.w-40{
+    width: 40%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-60{
+    width: 60%;
+}
+
+.c-big {
+    padding: 100px 140px;
+}
+
+/* Color properties */
+.blue {
+    background-color: rgb(181, 208, 230);
+}
+
+
+/* Header */
+.navigation {
+    height: 80px;
+    padding: 10px 15px;
+}
+
+.navigation ul {
+    list-style: none;
+    line-height: 60px;
+    display: inline-block;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navigation img {
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.navigation .button {
+    margin-left: 10px;
+}
+
+.spotlight h1 {
+    font-size: 85px;
+    font-weight: 900;
+    line-height: 110px;
+    margin-bottom: 30px;
+}
+
+.spotlight p{
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+    margin-bottom: 30px;
+    padding-right: 110px;
+}
+
+.spotlight .button {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.spotlight img {
+    position: absolute;
+    vertical-align: top;
+    right: 0;
+    
+    padding-right: inherit;
+    width: 60%;
+}
+
+.spotlight .fa-arrow-down {
+    font-size: 35px;
+}
