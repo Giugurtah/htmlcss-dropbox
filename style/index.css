@@ -1,4 +1,4 @@
-/* Reset */
+/********* Reset *********/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +9,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Generiche */
+/********* Generiche *********/
 .button {
     display: inline-block;
 
@@ -18,11 +18,7 @@ body {
     padding: 10px 15px;
 }
 
-/* Position properties */
-.inline-cul {
-    display: inline-block;
-}
-
+/********* Position properties *********/
 .cul {
     float: left;
 }
@@ -39,23 +35,7 @@ body {
     text-align: right;
 }
 
-/* Sizing properties */
-.w-33{
-    width: calc((100% - 120px) / 3);
-}
-
-.w-40{
-    width: 40%;
-}
-
-.w-50 {
-    width: 50%;
-}
-
-.w-60{
-    width: 60%;
-}
-
+/********* Sizing properties *********/
 .c-big {
     padding: 100px 140px;
 }
@@ -63,7 +43,28 @@ body {
 .c-small {
     padding: 150px 250px;
 }
-/* Color properties */
+
+.w-33{
+    width: calc((100% - 120px) / 3);
+}
+
+.w-35{
+    width: 35%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-65{
+    width: 65%;
+}
+
+.my-35 {
+    margin: 35px 0;
+}
+
+/********* Color properties **********/
 .blue {
     background-color: rgb(181, 208, 230);
 }
@@ -75,7 +76,13 @@ body {
 .bold {
     font-weight: 800;
 }
-/* Header */
+
+.btm-brdr {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+
+/********* Header *********/
 .navigation {
     height: 80px;
     padding: 10px 15px;
@@ -84,7 +91,6 @@ body {
 .navigation ul {
     list-style: none;
     line-height: 60px;
-    display: inline-block;
 }
 
 .navigation li {
@@ -94,48 +100,51 @@ body {
 
 .navigation img {
     vertical-align: middle;
-    margin-right: 10px;
-    margin-bottom: 5px;
 }
 
 .navigation .button {
     margin-left: 10px;
+    line-height: 20px;
+}
+
+.spotlight .c-big {
+    height: 800px;
 }
 
 .spotlight h1 {
     font-size: 85px;
     font-weight: 900;
     line-height: 110px;
-    margin-bottom: 30px;
+    margin-bottom: 30px;  /*possibile utility mb-30px*/
 }
 
 .spotlight p{
     font-size: 20px;
     font-weight: 200;
     line-height: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /*possibile utility mb-30*/
     padding-right: 110px;
 }
 
 .spotlight .button {
     font-size: 23px;
-    margin-bottom: 5px;
+    margin-bottom: 10px; /*possibile utility mb-10*/
 }
 
 .spotlight img {
     position: absolute;
-    vertical-align: top;
+    top: 0;
     right: 0;
     
-    padding-right: inherit;
-    width: 60%;
+    width: 105%;
 }
 
 .spotlight .fa-arrow-down {
     font-size: 35px;
+    margin-bottom: 30px; /*possibile utility mb-30*/
 }
 
-/* Main */
+/********* Main *********/
 .buisness h2 {
     font-size: 45px;
     line-height: 150px;
@@ -155,7 +164,7 @@ body {
 }
 
 .buisness .cul {
-    height: 1000px;
+    height: 1100px;
     border: 1px solid lightgray;
     margin-top: 50px;
 }
@@ -165,7 +174,7 @@ body {
     margin-right: 60px;
 }
 
-/* Styling della singola colonna */
+/**** Styling della singola colonna ****/
 .cul-header {
     border-bottom: 1px solid lightgray;
     text-align: center;
@@ -176,11 +185,12 @@ body {
 .cul-main {
     padding: 40px 30px;
     line-height: 30px;
+
 }
 
 .cul-main h3 {
     font-size: 35px;
-    margin: 20px 0;
+    margin: 20px 0; /*possibile utility mY-20*/
 }
 
 .cul-main ul {
@@ -188,34 +198,23 @@ body {
 }
 
 .cul-main li {
-    margin: 40px 0;
+    margin: inherit;
     line-height: 20px;
     font-size: 15px;
     font-weight: 400;
 }
 
-.cul-main li[type="pen"]:before {
-    font-family: 'FontAwesome';
-    content: '\f304';
-    padding-right: 10px;
-    vertical-align: top;
-}
-
-.cul-main li[type="user"]:before {
-    font-family: 'FontAwesome';
-    content: '\f007';
-    padding-right: 10px;
-    vertical-align: top;
-}
-
-.cul-main li[type="folder"]:before {
-    font-family: 'FontAwesome';
-    content: '\f07b';
-    padding-right: 10px;
-    vertical-align: top;
-}
-
-li div {
+.buisness .cul-main li div {
     display: inline-block;
-    width: 90%;   
+    width: 90%;
 }
+
+.cul-main i {
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+.fa-check {
+    color: rgb(0, 100, 255);
+}
+
