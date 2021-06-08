@@ -5,17 +5,27 @@
     padding: 0;
 }
 
+/********* Generiche *********/
+.button {
+    display: inline-block;
+    
+    background-color: rgb(18, 103, 251);
+    color: white;
+    padding: 10px 15px;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-/********* Generiche *********/
-.button {
-    display: inline-block;
+h2 {
+    font-size: 45px;
+    line-height: 150px;
+}
 
-    background-color: rgb(18, 103, 251);
-    color: white;
-    padding: 10px 15px;
+h3 {
+    font-size: 35px;
+    margin: 20px 0;
 }
 
 /********* Position properties *********/
@@ -41,27 +51,53 @@ body {
 }
 
 .c-small {
-    padding: 150px 250px;
+    padding: 100px 250px;
+}
+
+.w-30{
+    width: 30%;
 }
 
 .w-33{
     width: calc((100% - 120px) / 3);
 }
+    
+    /* Tre colonne ritagliate in automatico con l'aggiunta di width w-33 */
+    .vertical .cul:nth-of-type(2) {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
 
-.w-35{
-    width: 35%;
+.w-40 {
+    width: 40%;
 }
 
 .w-50 {
     width: 50%;
 }
 
-.w-65{
-    width: 65%;
+.w-60 {
+    width: 60%;
+}
+
+.w-70{
+    width: 70%;
+}
+
+.w-100{
+    width: 100%;
 }
 
 .my-35 {
     margin: 35px 0;
+}
+
+.my-70 {
+    margin: 70px 0;
+}
+
+.my-140 {
+    margin: 140px 0;
 }
 
 /********* Color properties **********/
@@ -82,139 +118,177 @@ body {
     padding-bottom: 20px;
 }
 
+
 /********* Header *********/
-.navigation {
-    height: 80px;
-    padding: 10px 15px;
-}
+/********* Navigation *********/
+    .navigation {
+        height: 80px;
+        padding: 10px 15px;
+    }
 
-.navigation ul {
-    list-style: none;
-    line-height: 60px;
-}
+    .navigation ul {
+        list-style: none;
+        line-height: 60px;
+    }
 
-.navigation li {
-    display: inline-block;
-    margin: 0 20px;
-}
+    .navigation li {
+        display: inline-block;
+        margin: 0 20px;
+    }
 
-.navigation img {
-    vertical-align: middle;
-}
+    .navigation img {
+        vertical-align: middle;
+    }
 
-.navigation .button {
-    margin-left: 10px;
-    line-height: 20px;
-}
-
-.spotlight .c-big {
-    height: 800px;
-}
-
-.spotlight h1 {
-    font-size: 85px;
-    font-weight: 900;
-    line-height: 110px;
-    margin-bottom: 30px;  /*possibile utility mb-30px*/
-}
-
-.spotlight p{
-    font-size: 20px;
-    font-weight: 200;
-    line-height: 30px;
-    margin-bottom: 30px; /*possibile utility mb-30*/
-    padding-right: 110px;
-}
-
-.spotlight .button {
-    font-size: 23px;
-    margin-bottom: 10px; /*possibile utility mb-10*/
-}
-
-.spotlight img {
-    position: absolute;
-    top: 0;
-    right: 0;
+    .navigation .button {
+        margin-left: 10px;
+        line-height: 20px;
+    }
     
-    width: 105%;
-}
+/********* Spotlight *********/
+    .spotlight .c-big {
+        height: 800px;
+    }
 
-.spotlight .fa-arrow-down {
-    font-size: 35px;
-    margin-bottom: 30px; /*possibile utility mb-30*/
-}
+    .spotlight h1 {
+        font-size: 85px;
+        font-weight: 900;
+        line-height: 110px;
+        margin-bottom: 30px;  /*possibile utility mb-30px*/
+    }
+
+    .spotlight p{
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 30px;
+        margin-bottom: 30px; /*possibile utility mb-30*/
+        padding-right: 110px;
+    }
+
+    .spotlight .button {
+        font-size: 23px;
+        margin-bottom: 10px; /*possibile utility mb-10*/
+    }
+
+    .spotlight img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+        width: 105%;
+    }
+
+    .spotlight .fa-arrow-down {
+        font-size: 35px;
+        margin-bottom: 30px; /*possibile utility mb-30*/
+    }
 
 /********* Main *********/
-.buisness h2 {
-    font-size: 45px;
-    line-height: 150px;
-}
 
-.buisness input[type="radio"] {
-    vertical-align: middle;
-    height: 25px;
-    width: 25px;
-    margin-top: -6px;
-}
+/********* Buiseness *********/
+    .buisness input[type="radio"] {
+        vertical-align: middle;
+        height: 25px;
+        width: 25px;
+        margin-top: -6px;
+    }
 
-.buisness label {
-    font-size: 20px;
-    line-height: 30px;
-    margin-right: 20px;
-}
+    .buisness label {
+        font-size: 20px;
+        line-height: 30px;
+        margin-right: 20px;
+    }
 
-.buisness .cul {
-    height: 1100px;
-    border: 1px solid lightgray;
-    margin-top: 50px;
-}
+    .buisness .vertical .cul {
+        height: 1100px;
+        border: 1px solid lightgray;
+    }
 
-.buisness .cul:nth-of-type(2){
-    margin-left: 60px;
-    margin-right: 60px;
-}
+    .horizontal > .cul {
+        border: 1px solid lightgray;
+    }
 
+    .horizontal .cul-main {
+        padding: 0 30px;
+    }
+        
 /**** Styling della singola colonna ****/
-.cul-header {
-    border-bottom: 1px solid lightgray;
-    text-align: center;
-    line-height: 50px;
+        .cul-header {
+            border-bottom: 1px solid lightgray;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+        }
+
+        .cul-main ul {
+            list-style: none;
+        }
+
+        .cul-main li {
+            margin: inherit;
+            line-height: 20px;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .buisness .cul-main li div {
+            display: inline-block;
+            width: 90%;
+        }
+
+        .cul-main i {
+            margin-right: 5px;
+            vertical-align: top;
+        }
+
+        .fa-check {
+            color: rgb(0, 100, 255);
+        }
+
+        .vertical .cul-main {
+            padding: 40px 30px;
+            line-height: 30px;
+        }
+
+        .horizontal h3 {
+            margin: 0px 0px;
+            
+        }
+
+        .horizontal span {
+            line-height: 50px;
+        }
+
+/********** Partner *********/    
+    .partner .cul:last-of-type {
+        height: 60%;
+        padding-left: 60px;
+        padding-top: 60px;
+    }
+
+    .partner img {
+        width: 100%;
+    }
+
+    .partner span {
+        line-height: 30px;
+    }
+
+    .partner .button {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+
+/********** Operation **********/
+.operation img {
+    width: 100%;
+}
+
+.operation p {
     font-size: 20px;
+    font-weight: 200;
+    line-height: 30px; /*possibile utility mb-30*/    
 }
 
-.cul-main {
-    padding: 40px 30px;
-    line-height: 30px;
-
-}
-
-.cul-main h3 {
-    font-size: 35px;
-    margin: 20px 0; /*possibile utility mY-20*/
-}
-
-.cul-main ul {
-    list-style: none;
-}
-
-.cul-main li {
-    margin: inherit;
-    line-height: 20px;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.buisness .cul-main li div {
-    display: inline-block;
-    width: 90%;
-}
-
-.cul-main i {
-    margin-right: 5px;
-    vertical-align: top;
-}
-
-.fa-check {
-    color: rgb(0, 100, 255);
-}
-
+.operation 
