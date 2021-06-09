@@ -23,10 +23,6 @@
 }
 
 /********* Spotlight *********/
-.spotlight .c-big {
-    height: 750px;
-}
-
 .spotlight p{
     padding-right: 110px;
 }
@@ -41,7 +37,7 @@
     top: 0;
     right: 0;
     
-    width: 105%;
+    width: 110%;
 }
 
 .spotlight .fa-arrow-down {
@@ -76,7 +72,7 @@
 .cul-header {
     border-bottom: 1px solid lightgray;
     text-align: center;
-    line-height: 50px;  /* LINEHIGHT */
+    line-height: 50px; 
     font-size: 20px;
 }
 
@@ -113,6 +109,10 @@
     line-height: 50px;
 }
 
+.cul-main .ruler {
+    width: 50px;
+}
+
 /********** Partner *********/    
 .partner .cul:last-of-type {
     padding-left: 60px;
@@ -127,8 +127,13 @@
 
 
 /********** Team **********/
+.team > .c-small {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .team h2 {
-    line-height: 50px; /* LINEHIGHT */
+    line-height: 50px;
 }
 
 .square {
@@ -155,10 +160,6 @@
     font-size: 20px;
     font-weight: 200;
     line-height: 30px; 
-}
-
-.team .c-small {
-    height: 260px;
 }
 
 .team .button-white {
@@ -205,7 +206,7 @@
     background-image: url(../img/clear_channel.svg);
 }
 
-/********** Team **********/
+/********** Questions **********/
 .questions li {
     line-height: 100px;
     border-bottom: 1px solid lightgray;
@@ -224,10 +225,6 @@
 }
 
 /********** Footer **********/
-footer .c-big {
-    height: 500px;
-}
-
 footer h4 {
     font-size: 25px;
 }
@@ -237,7 +234,7 @@ footer li {
 }
 
 footer .cul {
-    height: 350px;
+    height: 300px;
 }
 
 footer i {
