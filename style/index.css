@@ -28,6 +28,11 @@ h3 {
     margin: 20px 0;
 }
 
+.btm-brdr {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+
 /********* Position properties *********/
 .cul {
     float: left;
@@ -39,6 +44,13 @@ h3 {
 
 .relative {
     position: relative;
+}
+
+.centred {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .text-right{
@@ -54,11 +66,15 @@ h3 {
     padding: 100px 250px;
 }
 
-.w-30{
+.w-25 {
+    width: 25%;
+}
+
+.w-30 {
     width: 30%;
 }
 
-.w-33{
+.w-33 {
     width: calc((100% - 120px) / 3);
 }
     
@@ -80,11 +96,11 @@ h3 {
     width: 60%;
 }
 
-.w-70{
+.w-70 {
     width: 70%;
 }
 
-.w-100{
+.w-100 {
     width: 100%;
 }
 
@@ -105,19 +121,21 @@ h3 {
     background-color: rgb(181, 208, 230);
 }
 
+.lightgray {
+    background: rgb(245, 245, 245);
+}
+
 .text-gray {
     color: lightgray;
+}
+
+.text-brown {
+    color: rgb(96, 11, 43);
 }
 
 .bold {
     font-weight: 800;
 }
-
-.btm-brdr {
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 20px;
-}
-
 
 /********* Header *********/
 /********* Navigation *********/
@@ -147,7 +165,7 @@ h3 {
     
 /********* Spotlight *********/
     .spotlight .c-big {
-        height: 800px;
+        height: 750px;
     }
 
     .spotlight h1 {
@@ -186,99 +204,99 @@ h3 {
 /********* Main *********/
 
 /********* Buiseness *********/
-    .buisness input[type="radio"] {
-        vertical-align: middle;
-        height: 25px;
-        width: 25px;
-        margin-top: -6px;
-    }
+.buisness input[type="radio"] {
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+    margin-top: -6px;
+}
 
-    .buisness label {
-        font-size: 20px;
-        line-height: 30px;
-        margin-right: 20px;
-    }
+.buisness label {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 20px;
+}
 
-    .buisness .vertical .cul {
-        height: 1100px;
-        border: 1px solid lightgray;
-    }
+.buisness .vertical .cul {
+    height: 1100px;
+    border: 1px solid lightgray;
+}
 
-    .horizontal > .cul {
-        border: 1px solid lightgray;
-    }
+.horizontal > .cul {
+    border: 1px solid lightgray;
+}
 
-    .horizontal .cul-main {
-        padding: 0 30px;
-    }
+.horizontal .cul-main {
+    padding: 0 30px;
+}
         
 /**** Styling della singola colonna ****/
-        .cul-header {
-            border-bottom: 1px solid lightgray;
-            text-align: center;
-            line-height: 50px;
-            font-size: 20px;
-        }
+.cul-header {
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
 
-        .cul-main ul {
-            list-style: none;
-        }
+.cul-main ul {
+    list-style: none;
+}
 
-        .cul-main li {
-            margin: inherit;
-            line-height: 20px;
-            font-size: 15px;
-            font-weight: 400;
-        }
+.cul-main li {
+    margin: inherit;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
 
-        .buisness .cul-main li div {
-            display: inline-block;
-            width: 90%;
-        }
+.buisness .cul-main li div {
+    display: inline-block;
+    width: 90%;
+}
 
-        .cul-main i {
-            margin-right: 5px;
-            vertical-align: top;
-        }
+.cul-main i {
+    margin-right: 5px;
+    vertical-align: top;
+}
 
-        .fa-check {
-            color: rgb(0, 100, 255);
-        }
+.fa-check {
+    color: rgb(0, 100, 255);
+}
 
-        .vertical .cul-main {
-            padding: 40px 30px;
-            line-height: 30px;
-        }
+.vertical .cul-main {
+    padding: 40px 30px;
+    line-height: 30px;
+}
 
-        .horizontal h3 {
-            margin: 0px 0px;
-            
-        }
+.horizontal h3 {
+    margin: 0px 0px;
+    
+}
 
-        .horizontal span {
-            line-height: 50px;
-        }
+.horizontal span {
+    line-height: 50px;
+}
 
 /********** Partner *********/    
-    .partner .cul:last-of-type {
-        height: 60%;
-        padding-left: 60px;
-        padding-top: 60px;
-    }
+.partner .cul:last-of-type {
+    height: 60%;
+    padding-left: 60px;
+    padding-top: 60px;
+}
 
-    .partner img {
-        width: 100%;
-    }
+.partner img {
+    width: 100%;
+}
 
-    .partner span {
-        line-height: 30px;
-    }
+.partner span {
+    line-height: 30px;
+}
 
-    .partner .button {
-        background-color: white;
-        color: black;
-        border: 1px solid black;
-    }
+.partner .button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
 
 /********** Operation **********/
 .operation img {
@@ -291,4 +309,126 @@ h3 {
     line-height: 30px; /*possibile utility mb-30*/    
 }
 
-.operation 
+/********** Team **********/
+.team h2 {
+    line-height: 50px;
+
+}
+
+.team > div:first-of-type {
+    margin: 0 250px;
+    padding: 50px 0;
+}
+
+.square {
+    width: 50%;
+    padding-bottom: 50%;
+
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: invert(1);
+}
+
+.rectangular {
+    padding-bottom: 50%;
+}
+
+.rectangular > div {
+    height: 80%;
+    width: 80%;
+}
+
+.rectangular img:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 50%;
+    border-bottom: 1px solid black;
+}
+
+.rectangular p {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+}
+
+.rectangular span {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+}
+
+.team .button {
+    padding: 10px 100px;
+    background-color: white;
+    color: black;
+}
+
+.team .c-small {
+    height: 260px;
+}
+
+#design {
+    background-color: #5c2d62;
+    background-image: url(../img/designit.svg);
+}
+
+#asu {
+    background-color: #9ff4d4;
+    background-image: url(../img/arizona_state_university.svg);
+}
+
+#uf {
+    background-color: #e86b33;
+    background-image: url(../img/university_of_florida.svg);
+}
+
+#topps {
+    background-color: #03ded6;
+    background-image: url(../img/topps.svg);
+}
+
+#wbr {
+    background-color: #2df5d8;
+    background-image: url(../img/world_bicycle_relief.svg);
+}
+
+#hearst {
+    background-color: #4a2f19;
+    background-image: url(../img/hearst_corp.svg);
+}
+
+#lonely-planet {
+    background-color: #efd780;
+    background-image: url(../img/lonely_planet.svg);
+}
+
+#clear-channel {
+    background-color: #0129bb;
+    background-image: url(../img/clear_channel.svg);
+}
+
+/********** Team **********/
+.questions ul {
+    list-style: none;
+}
+
+.questions li {
+    line-height: 100px;
+    border-bottom: 1px solid lightgray;
+    font-weight: 900;
+}
+
+.questions li:first-of-type {
+    border-top: 1px solid lightgray;
+}
+.questions i {
+    position: absolute;
+    right: 0;
+    margin: 0 50px;
+    line-height: 100px;
+}
